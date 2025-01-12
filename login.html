@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    @font-face {
+            font-family: 'Ownglyph_ParkDaHyun';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+    body {
+
+        font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+        background-color: #e4ffe6;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+        padding: 0px;
+    }
+    button {
+        font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+        position: static;
+        background-color:#238248;
+        color: #fff;
+        border:none;
+        border-radius:10px;
+        min-height:40px; 
+        min-width: 50px;
+        font-size: 40px; 
+        padding: 15px 30px;
+    }
+
+
+    button:active {
+        background-color: #ffbf00;
+}
+
+
+</style>
+    <head>
+        <title> 로그인 </title>
+    </head>
+
+<body>
+    <h2> 로그인 </h2>
+    <form method="post" action="login.php" method="POST">
+        <p>아이디: <input type="text" name="userid"> </p>
+        <p>비밀번호: <input type="text" name="pw"></p>
+        <button type="submit" value="LOGIN">로그인
+        </form>
+</body>
+</html>

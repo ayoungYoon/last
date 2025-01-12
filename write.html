@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+    @font-face {
+            font-family: 'Ownglyph_ParkDaHyun';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        
+        .body {
+            font-family: 'Ownglyph_ParkDaHyun', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;  
+            }
+
+            .form {
+            
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(18, 88, 168, 0.8);
+            padding: 10px 20px;
+            width: 500px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            }
+
+        .h2 {
+             
+            color: #7f8dc3; 
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom:500px; 
+        }
+
+        
+        .write_title, 
+        .write_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            
+        }
+
+        .button{
+              
+            background-color: #ffadad;
+            border-radius: 10px;
+            padding: 10px 20px; 
+            color: white; 
+            border: none; 
+            font-size: 16px; 
+            cursor: pointer
+            
+        }
+    </style>
+    <head>
+        <title> 글쓰기 </title>
+    </head>
+
+<body>
+    <h2> 글쓰기 </h2>
+    <div style="margin-top: 20px;">
+        <a href="board.php">
+            <button style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                게시판으로 돌아가기
+            </button>
+        </a>
+    </div>
+    
+    <form action="write.php" method="post">
+
+        <div class="writer">
+            작성이<input type="text" name ="userid" >
+        </div>
+        <div class = "write_title">
+
+           <input type ="text" name ="title" placeholder="제목을 입력하세요">
+        </div>
+
+        <div class ="write_content">
+            <textarea name ="content" placeholder="내용을 입력하세요"></textarea>
+            <input type ="file" name="" id="">
+        </div>
+
+        <div class = "button">
+            <button type ="submit">작성</button>
+        </div>
+
+        
+    </form>
+
+    
+    </div>
+    
+
+</body>
+</html>
